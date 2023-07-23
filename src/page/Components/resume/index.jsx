@@ -42,7 +42,7 @@ const Resume = ({ mode }) => {
           >
            A software developer is a professional who is responsible for designing and building computer programs.<br /><br /> My expertise primarily revolves around React Native, React, and Next.js, and I possess a strong command over various programming languages and tools, including JavaScript, TypeScript, HTML, and CSS.
           </p>
-          <a className="bg-[#323BAC] text-white text-[15px] px-7 py-2 rounded-full button" href={MyResume} target="_blank" rel="noreferrer">
+          <a className="bg-[#323BAC] text-white text-[15px] px-7 py-2 rounded-full button" download href={MyResume} target="_blank" rel="noreferrer">
             DOWNLOAD CV
           </a>
         </div>
