@@ -1,0 +1,18 @@
+.social-icn {
+  a {
+    border: 1px solid white;
+  }
+}
+#footer {
+  &.dark {
+    border-top: 1px solid #fff9;
+  }
+  img{
+    height: 50px;
+  }
+  @media screen and (max-width: 768px) {
+    .icon svg {
+      height: 15px !important;
+    }
+  }
+}

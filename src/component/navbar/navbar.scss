@@ -1,0 +1,212 @@
+.header-container {
+  height: 100px;
+  justify-content: center;
+  position: fixed;
+  backdrop-filter: blur(8px);
+  z-index: 2;
+  background-color: #edf2f810;
+
+  &.dark {
+    background-color: #00000020;
+  }
+
+  @media screen and (max-width: 420px) {
+    height: 80px;
+  }
+  .container {
+    border-bottom: 1px solid #323bac20;
+    padding: 0 20px;
+    transform: translateY(-100px);
+    transition: all 1s ease-in-out;
+    opacity: 0;
+    &.animate {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+    &.dark {
+      border-bottom: 1px solid #ffffff50;
+    }
+    .logo {
+height: 50px;
+      @media screen and (max-width: 420px) {
+        width: 120px;
+      }
+    }
+  }
+
+  ul {
+    height: fit-content;
+    margin-top: 7px;
+    a {
+      font-family: "Josefin Sans";
+      color: #a6a9ce;
+      font-size: 15px;
+      letter-spacing: 1px;
+      position: relative;
+      cursor: pointer;
+      &.dark {
+        color: #ffffff40 !important;
+        &:hover {
+          color: #ffffff !important;
+          &::before {
+            background-color: #ffffff !important;
+          }
+        }
+      }
+      &:hover,
+      &.activeTab {
+        color: #323bac;
+        &::before {
+          width: 100%;
+        }
+      }
+      &.activeTab {
+        color: #323bac;
+        &::after {
+          height: 8px;
+          width: 8px;
+          top: -10px;
+          left: calc(50% - 5px);
+        }
+        &::before {
+          width: 100%;
+        }
+      }
+      &.activeTab.dark {
+        color: white !important;
+        &::after,
+        &::before {
+          background-color: white;
+          box-shadow: 0px 4px 4px rgba(255, 255, 255, 0.25);
+        }
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        height: 0px;
+        width: 0px;
+        top: 0px;
+        left: calc(50%);
+        border-radius: 50%;
+        background-color: #323bac;
+        box-shadow: 0px 4px 4px rgba(50, 59, 172, 0.25);
+        transition: all 0.5s ease-in-out;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        height: 1px;
+        width: 0%;
+        top: 23px;
+        margin: auto;
+        border-radius: 50%;
+        background-color: #323bac;
+        box-shadow: 0px 4px 4px rgba(50, 59, 172, 0.25);
+        transition: all 0.5s ease-in-out;
+      }
+    }
+    // .nav-link {
+    //   &:hover {
+    //     .nav-line {
+    //       display: flex;
+    //     }
+    //   }
+    // }
+    // .nav-line {
+    //   margin-top: 5px;
+    //   width: 100%;
+    //   display: none;
+    // }
+
+    @media screen and (max-width: 1024px) {
+      gap: 30px !important;
+    }
+    @media screen and (max-width: 768px) {
+      &.navlink {
+        display: none;
+      }
+    }
+  }
+  .round-container {
+    height: 45px;
+    width: 45px;
+    background-color: #323bac;
+    border-radius: 50%;
+    box-shadow: 0px 20px 30px rgba(50, 59, 172, 0.25);
+    cursor: pointer;
+
+    @media screen and (max-width: 420px) {
+      height: 35px;
+      width: 35px;
+      img {
+        width: 20px;
+      }
+      &.menu {
+        img {
+          width: 15px;
+        }
+      }
+    }
+    &.menu {
+      display: none;
+      @media screen and (max-width: 768px) {
+        display: flex;
+      }
+    }
+    &.dark {
+      background-color: #ffffff;
+      box-shadow: 0px 20px 30px rgba(255, 255, 255, 0.3);
+    }
+  }
+  .side-menu {
+    position: fixed;
+    display: none;
+    height: 100vh;
+    width: 100%;
+    background-color: #ffffffca;
+    backdrop-filter: blur(10px);
+    z-index: 10;
+    transform: translateX(100%);
+
+    @media screen and (max-width: 768px) {
+      display: flex;
+    }
+    &.dark {
+      background-color: #000000b8;
+    }
+    &.activeTab {
+      transform: rotateX(0);
+    }
+    .close-btn {
+      position: absolute;
+      top: 30px;
+      left: 30px;
+      cursor: pointer;
+    }
+    ul {
+      display: flex;
+      flex-direction: column;
+      a {
+        color: #323bac !important;
+        font-size: 20px;
+        text-align: center;
+        margin: 20px;
+        font-weight: 600;
+        &::after {
+          background-color: #323bac;
+        }
+      }
+      &.dark {
+        a {
+          color: white !important;
+          &::after {
+            background-color: white;
+          }
+          &::before {
+            background-color: white;
+          }
+        }
+      }
+    }
+  }
+}
