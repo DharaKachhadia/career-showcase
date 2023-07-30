@@ -47,26 +47,25 @@ const Contact = ({ mode }) => {
       </div>
       <div className="w-full flex md:mt-20 my-10 flex-col md:flex-row content items-center justify-center md:gap-10 gap-5 relative">
         <div
-          className={`bg-white rounded-[14px] py-[18px] pl-[23px] pr-[55px] ${
-            DarkMode && "dark"
-          } contact-card`}
+          className={`bg-white rounded-[14px] py-[18px] pl-[23px] pr-[55px] ${DarkMode && "dark"
+            } contact-card`}
         >
           <div className="flex  items-center">
             <img src={Mail} alt="" className="h-[40px]" />
             <span className="text-[#323bac] text-[15px] font-semibold pl-3">
-            dharakachhadia@gmail.com
+              dharakachhadiya.work@gmail.com
+
             </span>
           </div>
         </div>
         <div
-          className={`bg-white rounded-[14px] py-[18px] pl-[23px] pr-[155px] ${
-            DarkMode && "dark"
-          } contact-card`}
+          className={`bg-white rounded-[14px] py-[18px] pl-[23px] pr-[155px] ${DarkMode && "dark"
+            } contact-card`}
         >
           <div className="flex  items-center">
             <img src={Mobile} alt="" className="h-[40px]" />
             <span className="text-[#323bac] text-[15px] font-semibold pl-3">
-            live:.cid.c87c90a30f79f8b3
+              live:.cid.c87c90a30f79f8b3
             </span>
           </div>
         </div>
@@ -74,7 +73,7 @@ const Contact = ({ mode }) => {
       <div className="flex md:flex-row md:gap-0 gap-10 flex-col w-full my-20 justify-between items-center">
         <div className="md:w-[30%] w-[80%]">
           <TextInput placeholder="NAME" />
-        </div> 
+        </div>
         <div className="md:w-[30%] w-[80%]">
           <TextInput placeholder="EMAIL ADDRESS" />
         </div>

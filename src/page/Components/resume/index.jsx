@@ -22,25 +22,22 @@ const Resume = ({ mode }) => {
         </div>
         <div className="md:w-3/5 w-full p-5">
           <h1
-            className={`font-semibold text-[25px] mt-5 md:text-star ${
-              DarkMode && "text-white"
-            }`}
+            className={`font-semibold text-[25px] mt-5 md:text-star ${DarkMode && "text-white"
+              }`}
           >
             <span className={`text-[#323bac]`}>Hello,</span> I'm Dhara Kachhadiya
           </h1>
           <p
-            className={`font-bold text-black mt-5 text-[50px] font-["Josefin Sans"] md:tracking-[.5px] ${
-              DarkMode && "text-[#fff]"
-            }`}
+            className={`font-bold text-black mt-5 text-[50px] font-["Josefin Sans"] md:tracking-[.5px] ${DarkMode && "text-[#fff]"
+              }`}
           >
-           Software Developer
+            Software Developer
           </p>
           <p
-            className={`text-[#ccc] mt-3 mb-10 text-justify	md:tracking-[.5px] ${
-              DarkMode && "text-[#888]"
-            }`}
+            className={`text-[#ccc] mt-3 mb-10 text-justify	md:tracking-[.5px] ${DarkMode && "text-[#888]"
+              }`}
           >
-           A software developer is a professional who is responsible for designing and building computer programs.<br /><br /> My expertise primarily revolves around React Native, React, and Next.js, and I possess a strong command over various programming languages and tools, including JavaScript, TypeScript, HTML, and CSS.
+            A software developer is a professional who is responsible for designing and building computer programs.<br /><br /> My expertise primarily revolves around React Native, React, and Next.js, and I possess a strong command over various programming languages and tools, including JavaScript, TypeScript, HTML, and CSS.
           </p>
           <a className="bg-[#323BAC] text-white text-[15px] px-7 py-2 rounded-full button" download href={MyResume} target="_blank" rel="noreferrer">
             DOWNLOAD CV

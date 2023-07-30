@@ -142,7 +142,7 @@ const Footer = ({ mode }) => {
         <Link to={"home"} spy={true} smooth={true}>
           <img src={DarkLogo} alt="" className="logo cursor-pointer" />
           <p className={`font-light text-[white] ml-3 `}>
-            dharakachhadia@gmail.com
+            dharakachhadiya.work@gmail.com
           </p>
         </Link>
         <SocialLinks DarkMode={DarkMode} />
