@@ -66,11 +66,11 @@ const Navbar = ({ mode, changeMode }) => {
         }  ${animate && "animate"}`}
       >
         <Link to={'home'} spy={true} smooth={true}>
-          <img
+          {/* <img
             src={DarkMode() ? DarkLogo : LightLogo}
             alt=""
             className="logo cursor-pointer"
-          /> 
+          />  */}
         </Link>
         <ul className="flex gap-10 navlink">
           <Links className={DarkMode() && "dark"} />
