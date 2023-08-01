@@ -66,7 +66,7 @@ const Contact = ({ mode }) => {
           <div className="flex  items-center">
             <img src={Mobile} alt="" className="h-[40px]" />
             <span className="text-[#323bac] text-[15px] font-semibold pl-3">
-            live:.cid.c87c90a30f79f8b3
+            +91 9409498003
             </span>
           </div>
         </div>
